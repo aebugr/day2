@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Text;
 
 namespace UP01.Models
 {
     public class Partners
     {
-        public int idpartners { get; set; }
+        [Key] public int idpartners { get; set; }
         public int type_partn { get; set; }
         public string company_name { get; set; }
         public string fio_director { get; set; }

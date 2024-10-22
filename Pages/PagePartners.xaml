@@ -9,9 +9,9 @@
       Title="PagePartners">
 
     <Grid Background="#F4E8D3 ">
-        <Label Content="Партнёры" FontSize="14" Foreground="#67BA80" FontWeight="Bold" FontFamily="Segoe UI" Margin="82,13,625,408"/>
-        <Image Source="/Images/Мастер пол.png" Margin="10,10,742,405"/>
-        <ScrollViewer Margin="0,67,0,35">
+        <Label Content="Партнёры" FontSize="14" Foreground="#67BA80" FontWeight="Bold" FontFamily="Segoe UI" Margin="82,0,0,408" Height="29" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="93"/>
+        <Image Source="/Images/Мастер пол.png" Margin="10,0,0,405" Height="35" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="48"/>
+        <ScrollViewer Height="342" VerticalAlignment="Top" HorizontalAlignment="Right" Width="800" Margin="0,75,0,0">
             <StackPanel x:Name="parent">
 
             </StackPanel>

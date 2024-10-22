@@ -23,6 +23,9 @@ namespace UP01
         public MainWindow()
         {
             InitializeComponent();
+            OpenPages(new Pages.PagePartners());
         }
+        public void OpenPages(Page page) =>
+           frame.Navigate(page);
     }
 }

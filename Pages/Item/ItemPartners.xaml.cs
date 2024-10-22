@@ -18,9 +18,19 @@ namespace UP01.Pages.Item
     /// </summary>
     public partial class ItemPartners : UserControl
     {
-        public ItemPartners()
+        Models.Partners partners;
+        PagePartners pagePartners;
+        public ItemPartners(Models.Partners Partners, PagePartners pagePartners)
         {
             InitializeComponent();
+            this.partners = Partners;
+            this.pagePartners = pagePartners;
+            typeLbl.Content = Partners.type_partn;
+            nameLbl.Content = Partners.company_name;
+            directorLbl.Content = Partners.fio_director;
+            phoneLbl.Content = Partners.number_phone;
+            raytingLbl.Content = Partners.rayting;
+            saleLbl.Content = Partners.skidka + " % ";
         }
     }
 }

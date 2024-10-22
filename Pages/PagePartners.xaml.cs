@@ -10,6 +10,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Xml.Linq;
+using UP01.Classes;
 
 namespace UP01.Pages
 {
@@ -18,9 +20,18 @@ namespace UP01.Pages
     /// </summary>
     public partial class PagePartners : Page
     {
+        public ContextPartners contextPartners = new ContextPartners();
         public PagePartners()
         {
             InitializeComponent();
+            CreateUI();
+        }
+        public void CreateUI()
+        {
+            foreach (Models.Partners partners in contextPartners.Partners)
+            {
+                parent.Children.Add(new Pages.Item.ItemPartners(partners, this));
+            }
         }
     }
 }
