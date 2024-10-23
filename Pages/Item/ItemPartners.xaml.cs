@@ -29,7 +29,7 @@ namespace UP01.Pages.Item
             nameLbl.Content = Partners.company_name;
             directorLbl.Content = Partners.fio_director;
             phoneLbl.Content = Partners.number_phone;
-            raytingLbl.Content = Partners.rayting;
+            raytingLbl.Content = "Рейтинг : " + Partners.rayting;
             saleLbl.Content = Partners.skidka + " % ";
         }
     }

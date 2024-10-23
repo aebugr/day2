@@ -30,6 +30,7 @@ namespace UP01.Pages
         {
             foreach (Models.Partners partners in contextPartners.Partners)
             {
+                partners.CalculateDiscount(); 
                 parent.Children.Add(new Pages.Item.ItemPartners(partners, this));
             }
         }
