@@ -18,7 +18,6 @@ namespace UP01.Pages.Item
     /// </summary>
     public partial class ItemPartners : UserControl
     {
-
         Models.Partners partners;
         PagePartners pagePartners;
         public ItemPartners(Models.Partners Partners, PagePartners pagePartners)
